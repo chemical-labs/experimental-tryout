@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, FlatList, Text, StatusBar, TextInput, TouchableOpacity, Image, AsyncStorage, Picker } from 'react-native'
+import { View, ScrollView, RefreshControl, FlatList, Text, StatusBar, TextInput, TouchableOpacity, Image, AsyncStorage, Picker } from 'react-native'
 import axios from 'axios'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Icons from 'react-native-vector-icons/Ionicons'
@@ -179,7 +179,8 @@ class Home extends Component{
             data_jurusan: [],
             username: null,
             search: null,
-            pelajaran: []
+            pelajaran: [],
+            refresh: false
         }
     }
 
@@ -231,7 +232,7 @@ class Home extends Component{
 
     render(){
         return(
-            <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#ededed' }}>
+            <ScrollView contentContainerStyle={{ flexGrow: 1, flexDirection: 'column', backgroundColor: '#ededed' }}>
                 <StatusBar hidden={true} />
                 <View style={{ flexDirection: 'column' }}>
                     <View style={{ alignItems: 'center', backgroundColor: '#6ECB63', borderBottomRightRadius: 15, borderBottomLeftRadius: 15 }}>
@@ -288,7 +289,7 @@ class Home extends Component{
                         </View>
                     </View>
                 </View>
-            </View>
+            </ScrollView>
         )
     }
 }

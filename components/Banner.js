@@ -25,7 +25,7 @@ export default class Banner extends Component{
                     </View>
 
                     <View style={{ marginRight: 25, marginTop: 25, flexDirection: 'column' }}>
-                        <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Clevery</Text>
+                        <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Experimental</Text>
                         <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Tryout</Text>
                         <Text style={{ color: 'white' }}>Online Study</Text>
                         <Text style={{ color: 'white' }}>And Tryout Platform</Text>
@@ -55,9 +55,9 @@ export default class Banner extends Component{
                         <Text style={{ fontWeight: 'bold', fontSize: 17, marginLeft: 15, color: '#a1a1a1', alignItems: 'center' }}>Login Dengan Twitter</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#a6e69e', padding: 10, borderRadius: 15, alignItems: 'center', paddingLeft: 25, paddingRight: 27, marginTop: 20 }} onPress={() => this.props.navigation.navigate('Login')}>
+                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#a6e69e', padding: 10, borderRadius: 15, alignItems: 'center', paddingLeft: 58, paddingRight: 58, marginTop: 20 }} onPress={() => this.props.navigation.navigate('Login')}>
                         <Icons name="logo-react" size={20} />
-                        <Text style={{ fontWeight: 'bold', fontSize: 17, marginLeft: 15, color: '#a1a1a1', alignItems: 'center' }}>Login Dengan Clevery</Text>
+                        <Text style={{ fontWeight: 'bold', fontSize: 17, marginLeft: 15, color: '#a1a1a1', alignItems: 'center' }}>Login Tryout</Text>
                     </TouchableOpacity>
 
                     <View style={{ alignItems: 'center', flexDirection: 'row', marginTop: 130 }}>

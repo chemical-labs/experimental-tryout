@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, ScrollView, Text, TextInput, StatusBar, TouchableOpacity, AsyncStorage, Image } from 'react-native'
+import { View, ScrollView, RefreshControl, Text, TextInput, StatusBar, TouchableOpacity, AsyncStorage, Image } from 'react-native'
 import axios from 'axios'
 import Icons from 'react-native-vector-icons/Ionicons'
 import konfigurasi from '../config'

@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Login from './components/Login'
 import Home from './components/Home'
 import Ulangan from './components/Ulangan'
+import Ulangan_Selesai from './components/Ulangan_Selesai'
 import Profile from './components/Profile'
 import Register from './components/Register'
 import Search from './components/Search'
@@ -39,6 +40,14 @@ export default class App extends Component{
                     <Stack.Screen name='Overview_Ulangan' component={Overview_Ulangan} options={{ title: '', headerStyle: {
                         backgroundColor: '#6ECB63',
                         elevation: 0,
+                    },
+                        headerTintColor: 'white'
+                    }} />
+                    <Stack.Screen name='Ulangan_Selesai' component={Ulangan_Selesai} options={{ title: '', headerStyle: {
+                        backgroundColor: '#6ECB63',
+                        elevation: 0,
+                        borderBottomLeftRadius: 10,
+                        borderBottomRightRadius: 10
                     },
                         headerTintColor: 'white'
                     }} />
